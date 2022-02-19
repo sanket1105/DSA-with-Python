@@ -6,19 +6,20 @@ Order of topics in which I will Cover the DSA:
 
   1. Recursion
   2. Maths For DSA and Bit Manipulation
-  3. Arrays
-  4. Linked Lists
-  5. Stacks and Queues
-  6. Searching Algorithms
-  7. Sorting Algorithms
-  8. Hashmaps
-  9. Trees
-  10. Heaps
-  11. Sliding Window technique
-  12. Graphs
-  13. Dynamic Programming
-  14. OOPS
-  15. Tries
+  3. Patterns
+  4. Arrays
+  5. Linked Lists
+  6. Stacks and Queues
+  7. Searching Algorithms
+  8. Sorting Algorithms
+  9. Hashmaps
+  10. Trees
+  11. Heaps
+  12. Sliding Window technique
+  13. Graphs
+  14. Dynamic Programming
+  15. OOPS
+  16. Tries
  
  Stay tune for the updates.
  Star the repo if you like my work.
