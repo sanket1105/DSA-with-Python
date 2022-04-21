@@ -1,0 +1,5 @@
+
+1. number of elements in the subarray with same common difference between them
+2. creating 2D matrix methods; Diff. methods
+3. Matrix Multiplication
+4. Largest Word in the string

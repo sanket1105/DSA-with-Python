@@ -1,3 +1,6 @@
+## theres a circular array 
+## find the max subarray sum
+
 def KadanesAlgorithms(arr):
     currmax = arr[0]
     maxtillNow = arr[0]

@@ -11,6 +11,8 @@ arr1 = [1,2,3,4,5,6,7]
 ## put those variables in the argument call in the function
 
 def binarysearch(arr1,start,end,target):
+    
+    ## base condition
     if start>end: return -1
     
     mid = int((start+ end)/2)

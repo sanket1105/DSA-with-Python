@@ -1,9 +1,11 @@
+a1 = [[2,4,1,2],[8,4,3,6],[1,7,9,5]]
+a2 = [[1,2,3],[4,5,6],[7,8,9],[4,5,6]]
 
-a= [[1,2,3],[4,5,6],[7,8,9]]
+a3 = [[0 for j in range(len(a2[0]))] for i in range(len(a1))]
 
-for i in range(len(a)):
-    for j in range(i,len(a[0])):
-        if i!=j:
-            a[i][j],a[j][i] = a[j][i],a[i][j]
+for i in range(len(a1)):
+    for j in range(len(a2[0])):
+        for k in range(len(a1[0])):
+            a3[i][j] += a1[i][k] * a2[k][j]
 
-print(a)            
+print(a3)

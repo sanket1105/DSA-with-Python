@@ -1,0 +1,10 @@
+1. Infix Postfix Prefix
+2. https://leetcode.com/problems/valid-parentheses
+3. Stacks using queues (both methods)
+4. Queues using stacks (both methods)
+5. Sliding Window Maximum (https://leetcode.com/problems/sliding-window-maximum/)
+6. Trapping Rain Water
+7. Redundant brackets
+8. https://leetcode.com/problems/3sum/
+9. https://leetcode.com/problems/max-consecutive-ones-iii
+10. https://leetcode.com/problems/longest-substring-without-repeating-characters/

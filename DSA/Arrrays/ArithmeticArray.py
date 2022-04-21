@@ -1,5 +1,7 @@
 
-a = [10,7,4,6,8,10,11]
+## number of elements in the subarray with same common difference between them
+
+a = [10,8,6,4,2,10,11]
 n = len(a)
 ans = 2
 pd = a[1] - a[0]
@@ -17,6 +19,3 @@ while j<n:
     j+=1 
 
 print(ans)
-
-
-

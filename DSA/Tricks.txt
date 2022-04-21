@@ -1,0 +1,18 @@
+
+## number of digits in any representation:
+log(base)(number) + 1
+
+Example: 100 in decimal -> log(10)(100) + 1 == 2
+
+###################################################
+
+mid = (S+E)//2  -> This may exceed the range if s and e are very large
+insted of that use : S + ((E-S)/2)
+
+###################################################
+
+If you sorted array and question is to find something, use binary search
+
+#####################################################
+
+# if linked list cycle is mentioned: fast and slow pointer will be used for sure

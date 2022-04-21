@@ -1,18 +1,15 @@
 
-s = "Hello I am Sanket"
-start = 0
-end = 0
+s = "I am SanketZ"
+
+res = 0
 length = 0
 for i in range(len(s)):
-    while s[i] != " ":
-        length+=1
-        i+=1
-    end = max(i,end)    
+    if s[i]!=" ":
+     length+=1
+    else:
+        res = max(res,length) 
+        length=0 
 
-
-
-
-
-
-print()
+res = max(res,length)
+print(res)
     

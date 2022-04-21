@@ -19,7 +19,7 @@
 ## array objects are stored in heap.
 ## Heap objects are not continous
 ## and memoery allocation using DMA
-## so theres a chance thar array in pyhton are not continous
+## so theres a chance thar array in python are not continous
 '''
 
 import array as arr
@@ -201,7 +201,7 @@ print(k)
 
 matrix = [[0,1,1],[1,0,1],[2,1,1]]
 m=0
-matrix[:][:][:][m]
+matrix[:][:][0]
 
 
 

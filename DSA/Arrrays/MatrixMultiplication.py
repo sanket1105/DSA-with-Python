@@ -5,7 +5,7 @@ a3=[[0 for i in range(len(a2[0]))] for j in range(len(a1))]
 
 for i in range(len(a1)):
     for j in range(len(a2[0])):
-        for k in range(0,len(a1[0])):
+        for k in range(len(a1[0])):
             a3[i][j] += a1[i][k] * a2[k][j]
 
 print(a3)            

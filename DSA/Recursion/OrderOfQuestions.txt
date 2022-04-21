@@ -1,0 +1,22 @@
+
+
+## Recursion order of Questions:
+1. Fibonacci number
+2. Binary Search using Recursion
+3. N to 1 and 1 to N 
+4. Product of 1 to N same as Factorial of a number
+5. sum of natural numbers till N 
+6. Sum of digits
+7. Product of digits
+8. Reverse a number
+9. *** Reverse a String
+10. Count Number of zeroes
+11. Count Steps: https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero
+12. Sorted Array or Not
+13. Linear Search Using Recursion
+14. linear Search for multiple occurences
+15. Return the list without providing it in the argument of the recursion function
+16. **Binary search in rotated array
+17. *** Pattern 01 and 02
+18. Bubble Sort
+19. Selection Sort

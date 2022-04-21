@@ -1,4 +1,5 @@
 
+
 ## iterative approach
 
 class node:
@@ -6,24 +7,51 @@ class node:
         self.data = data
         self.next = None
 
+class Linkedlist:
+    def __init__(self):
+        self.head = None
 
+    def reverseiterative(self,head):
 
-def printlist(head):
-        temp = head
+        if head == None or head.next == None: return
+
+        prev = None
+        present = head
+        future = head.next
+
+        while future.next:
+            present.next = prev
+            prev = present
+            present = future
+            future = future.next
+        present.next = prev
+        future.next = present
+
+        return future     ## head     
+
+    def push(self, new_data):
+        new_node = node(new_data)
+        new_node.next = self.head
+        self.head = new_node
+
+    def printlist(self):
+        temp = self.head
         while(temp != None): 
             print(temp.data,end=" ")
             temp = temp.next    
 
 
-head = node(1007)
-temp = head
-temp.next = node(5)
-temp.next.next = node(17)
-temp.next.next.next = node(27)
-temp.next.next.next.next = node(7)
-temp.next.next.next.next.next = node(1)
 
-printlist(head)
+llist = Linkedlist()
+llist.push(20)
+llist.push(4)
+llist.push(15)
+llist.push(85)
+
+llist.printlist()
 print("")
+
+llist.head = llist.reverseiterative(llist.head)
+llist.printlist()
 
 

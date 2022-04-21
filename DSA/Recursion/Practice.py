@@ -1,16 +1,8 @@
 
-def sumtriangle(arr):
 
-    if len(arr)<1 : return
+def rev(n):
+    if n%10==n: return n
 
-    temp = [0]*(len(arr)-1)
-    for i in range(0,len(arr)-1):
-        temp[i] = arr[i] + arr[i+1]
+    return str(n%10) + str(rev(n//10))
 
-    sumtriangle(temp) 
-    print(arr)
-     
-
-arr=[1,2,3,4,5]
-
-sumtriangle(arr)
+print(rev(23450))    
