@@ -13,23 +13,22 @@ nodes with same parent: siblings
 leaf node: no new node is coming out of it
 '''
 
-## tree from preorder: Root -> Left -> Right
-## inorder: Left -> Root -> right
-## postorder : Left -> right -> Root
-'''
--1 in preorder represents the null node
-'''
 
+# Python program to introduce Binary Tree
+
+# A class that represents an individual node in a
+# Binary Tree
 class Node:
-    def __init__(self,key):
-        self.left = None
-        self.right = None
-        self.val = key
+	def __init__(self,key):
+		self.left = None
+		self.right = None
+		self.val = key
 
 
+# create root
 root = Node(1)
-root.left = Node(2)
-root.right = Node(3)
-root.left.left = Node(4)    
-root.left.right = Node(5)
+root.left	 = Node(2);
+root.right	 = Node(3);
+root.left.left = Node(4);
+
 

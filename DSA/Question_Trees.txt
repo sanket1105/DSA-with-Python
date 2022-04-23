@@ -1,0 +1,6 @@
+1. https://leetcode.com/problems/count-complete-tree-nodes/
+  (SEE its recursive approach)
+
+2. Optimized version of finding diameter of the tree
+3. https://leetcode.com/problems/subtree-of-another-tree/
+4. sum of nodes at kth level
