@@ -1,0 +1,7 @@
+1. Search for the element in the infinite array
+2. https://leetcode.com/problems/peak-index-in-a-mountain-array/
+3. https://leetcode.com/problems/find-peak-element/
+4. https://leetcode.com/problems/find-in-mountain-array/
+5. https://leetcode.com/problems/search-in-rotated-sorted-array/
+6.(IMP) https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
+7. https://leetcode.com/problems/split-array-largest-sum/
