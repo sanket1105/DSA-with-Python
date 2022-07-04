@@ -19,7 +19,7 @@ def merge_function(head):
 
 
 def mergesort(head1,head2):
-        merge = node(-1)
+        merge = node(-1)  ## dummy node
         temp = merge
 
         while head1 and head2:
