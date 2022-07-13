@@ -28,9 +28,6 @@ def diamter(root,height):
     height.h = max(lh.h,rh.h) + 1
     return max(lh.h + rh.h + 1, max(ld,rd))
 
-def diamter_opt(root):
-    height = Height()
-    return diamter(root,height)
 
 root = Node(1)
 root.left = Node(2)
@@ -39,4 +36,4 @@ root.left.left = Node(4)
 root.left.right = Node(5)
 
 
-print(diamter_opt(root))
+print(diamter(root,Height))

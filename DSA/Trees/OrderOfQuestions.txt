@@ -1,0 +1,17 @@
+1. basic
+2. tree traversals
+3. pre post inorder traversal
+4. Tree from inorder and preorder
+5. Tree from postorder and inorder
+6. Special tree from pre order
+7. Sum of nodes
+8. order traversals
+9. k th level sum
+10. Height and diameter
+11. Diamter optimized one
+12. Sum replacement in BT
+13. height balanced
+14. Left view
+15. Right View
+16. Shortest distance between 2 nodes
+17. Flatten binary tree

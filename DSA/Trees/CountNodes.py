@@ -10,7 +10,6 @@ class Node:
 def countnodes(root):
 
     if root == None: return 0
-    total = 0
 
     return 1 + countnodes(root.left) + countnodes(root.right)
 

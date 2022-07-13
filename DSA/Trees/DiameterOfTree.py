@@ -16,7 +16,7 @@ def height(root):
 
     lh = height(root.left)
     rh = height(root.right) 
-    return max(lh,rh) + 1
+    return max(lh,rh) + 1 ## 1 for root
 
 def diameter(root):
     if root == None: return 0

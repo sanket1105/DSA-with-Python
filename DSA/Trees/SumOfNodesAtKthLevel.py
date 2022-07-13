@@ -1,44 +1,59 @@
 
 class Node:
-    def __init__(self,val):
+    def __init__(self,data):
         self.left = None
         self.right = None
-        self.val = val
+        self.val = data
 
 
-def kthlevelsum(root,k):
+def levelorder(root):
     if root==None: return
+
     queue = []
-    queue.append(root) ## appending root to queue
-    sum = 0
+    queue.append(root)
+   
+
+    while len(queue)>0:
+        print(queue[0].val, end=" ")
+
+        node = queue.pop(0)
+        if node.left is not None: queue.append(node.left)
+        if node.right is not None: queue.append(node.right)
+
+
+def levelordersum(root,k):
+    if root==None: return  ##sum not possible
+    queue = []
+    queue.append(root)
+    queue.append(None)
     level = 0
-    flag = 0
-    while len(queue)!=0:
-        
-        size = len(queue) ## number of elements at current level
-        while size!=0:
-            size-=1
-            ptr = queue[0]
-            queue.pop(0)
+    sum = 0
 
+    while len(queue)>0:
+        node = queue.pop(0)
+        if node!=None:
             if level==k:
-                sum+=ptr.val
-                flag = 1
+                sum += node.val
+            if node.left: queue.append(node.left)
+            if node.right: queue.append(node.right)    
 
-            else:
-                if ptr.left: queue.append(ptr.left)
-                if ptr.right: queue.append(ptr.right)
+        ## if node none but queue not empty
+        elif len(queue)>0:
+            queue.append(None)
+            level+=1
 
-        level+=1
-        if flag==1: break
-    return sum        
-
+    return sum
 
 
-root = Node(1)
+
+root = Node (1)
 root.left = Node(2)
 root.right = Node(3)
 root.left.left = Node(4)
-root.left.right = Node(5) 
+root.left.right = Node(-1) 
+
+(levelorder(root))
+print(" ")
+print(levelordersum(root,2))
   
-print(kthlevelsum(root,2))
+
