@@ -1,18 +1,14 @@
-nums = [1,1,1,0,0,0,1,1,1,1,0]
-k = 2
-start,end,n = 0,0,len(nums)
-zerocount = 0
-ans=  0
+a = [2,1,5,6,2,3]
+ans = 0
+q = []
 
-while end < n:
-    if nums[end]==0:
-        zerocount += 1
+for i in range(len(a)):
+    while q and a[i] > a[q[-1]]:
+        curr_height = a[q.pop()]
+        if len(q) == 0: break
+        h = min(a[i],a[q[-1]]) - curr_height
+        w = i-q[-1]-1
+        ans+=h*w
+    q.append(i)
 
-    while zerocount > k:
-        if nums[start]==0:
-            zerocount -= 1
-        start += 1
-
-    ans = max(ans,end-start+1)
-    end+=1
-print(ans) 
+print(ans)        

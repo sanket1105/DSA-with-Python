@@ -9,3 +9,16 @@ for i in range(len(a1)):
             a3[i][j] += a1[i][k] * a2[k][j]
 
 print(a3)
+
+#########################################################
+
+a = [1,2,3,8,5]
+s= 12
+n = len(a)
+
+left, right = 0,0
+currsum = a[0]
+
+while left<n :
+    while currsum < s and left<
+

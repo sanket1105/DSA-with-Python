@@ -1,4 +1,7 @@
 
+from secrets import randbits
+
+
 a = [2,1,5,6,2,3]
 stack = [-1]
 ans = 0
@@ -14,8 +17,8 @@ for i in range(len(a)):
 print(ans)
 
 ##################################################################
+a = [2,1,5,6,2,3]
 
-a = [3,1,2,4,0,1,3,2]
 stack = []
 ans = 0
 
@@ -115,3 +118,18 @@ while end < n:
 print(ans)            
 
 
+##############################################
+a = [2,1,5,6,2,3]
+ans = 0
+q = []
+
+for i in range(len(a)):
+    while q and a[i] > a[q[-1]]:
+        curr_height = a[q.pop()]
+        if len(q) == 0: break
+        h = min(a[i],a[q[-1]]) - curr_height
+        w = i-q[-1]-1
+        ans+=h*w
+    q.append(i)
+
+print(ans)        

@@ -1,0 +1,28 @@
+
+traversals
+tree from pre and inorder
+tree from post and inorder
+level order traversal
+level order sum
+count and sum of nodes
+height and diameter of tree (normal and optimized version)
+sum replacement in binary tree 
+height balanced binary tree
+right view of tree
+left view of tree
+shortest distance between two nodes
+flatten the binary tree into linked list
+** print all nodes at distance k
+** max path sum (https://leetcode.com/problems/binary-tree-maximum-path-sum)
+
+
+
+
+## BST
+Build bst from array
+Search in bst
+delete in BST
+** bst from preorder
+balanced bst
+bst from array
+** catalan numbers

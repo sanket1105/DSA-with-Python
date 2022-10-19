@@ -22,6 +22,7 @@ def diameter(root):
     if root == None: return 0
     ld = diameter(root.left)
     rd = diameter(root.right)
+    
     d3 = height(root.left) + height(root.right) + 1
 
     return max(d3,max(ld,rd))

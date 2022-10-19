@@ -1,0 +1,1 @@
+    print(root.data, end = " ")

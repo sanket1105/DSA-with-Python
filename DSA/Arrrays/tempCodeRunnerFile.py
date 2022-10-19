@@ -1,14 +1,19 @@
+k = [-1,0,1,2,-1,-4]
+k.sort()
 
-a1 = [[2,4,1,2],[8,4,3,6],[1,7,9,5]]
-a2 = [[1,2,3],[4,5,6],[7,8,9],[4,5,6]]
-a3=[[0 for i in range(len(a2[0]))] for j in range(len(a1))]
+i = 0
+n = len(k)
+for i in range(n-1):
+    j = i+1
+    l = n-1
+    while j < l:
+        
+        if (k[i] + k[j] + k[l] == 0):
+            print(k[i],k[j],k[l])
+            j+=1
+            l-=1
 
-for i in range(len(a1)):
-    for j in range(len(a2[0])):
-        for k in range(len(a1[0])):
-            a3[i][j] += a1[i][k] * a2[k][j]
-
-print(a3)          
-
-import numpy
-print(a1 @ a2)
+        elif  (k[i] + k[j] + k[l]) > 0:
+            l-=1
+        else:
+             j+=1 
