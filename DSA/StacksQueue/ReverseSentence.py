@@ -5,7 +5,7 @@
 stack = []
 s = 'Hey, I am Sanket.'
 
-n = len(s)-1
+n = len(s)
 temp = ""
 for i in range(n):
     if s[i]==" ":

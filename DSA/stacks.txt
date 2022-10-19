@@ -1,0 +1,12 @@
+reverse a sentence
+reverse a stack
+balanced paranthesis : https://leetcode.com/problems/valid-parentheses/
+Queue using linked list
+Queue using stacks (Leetcode pe question dekhna hai ye wala)
+Stack using queue
+sliding window maximum (https://leetcode.com/problems/sliding-window-maximum/
+Largest rectangle (https://leetcode.com/problems/largest-rectangle-in-histogram/)
+rainwater (https://leetcode.com/problems/largest-rectangle-in-histogram/)
+redundant brackets
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+max 1s (https://leetcode.com/problems/max-consecutive-ones-iii)

@@ -119,6 +119,7 @@ k = [[0 for i in range(cols)] for j in range(rows)]
 k
 
 a=[]
+rows,cols = 5,5
 for i in range(rows):
     col=[]
     for j in range(cols):
@@ -201,7 +202,8 @@ print(k)
 
 matrix = [[0,1,1],[1,0,1],[2,1,1]]
 m=0
-matrix[:][:][0]
+print(matrix[:][:][0])
+
 
 
 

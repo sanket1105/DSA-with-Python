@@ -1,5 +1,9 @@
 
 
+## whenever the questions says numbers from 1 to n: think of cyclic sort no matter what
+## like find the duplicate in sorted array of 1 to n, or smallest missing number like that
+
+
 ## array must have all elements in range(1,n)
 
 '''
@@ -21,7 +25,7 @@ and if 1: then will go on next index and will check for that also
 
 '''
 
-k = [1,2,3,5,4]
+k = [1,2,3,6,5,4]
 
 i=0
 while i<len(k):

@@ -1,6 +1,8 @@
+ 
 
+ ## selection sort
 '''
-## Select the min element at put it at its correct place
+## Select the min element is put at at its correct place thats is its correct index
 
 We will go on selecting the min element and will put that element in the right spot
 

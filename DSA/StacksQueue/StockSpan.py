@@ -5,7 +5,7 @@ todays price.
 '''
 
 price = [10, 4, 5, 90, 120, 80]
-ans = [0] * len(price)
+ans = [0] * len(price) 
 
 def stockspan(price,ans):
     n = len(price)

@@ -3,7 +3,7 @@
 
 '''
 Its basically comparison sort method
-In this first pass, the largest element came in the end and so on....on each step
+In this first pass, the largest element comes in the end and so on....on each step
 
 ## no extra space used : O(1)
 ## time complexity : O(n**2)

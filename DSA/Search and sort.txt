@@ -5,3 +5,11 @@
 5. https://leetcode.com/problems/search-in-rotated-sorted-array/
 6.(IMP) https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
 7. https://leetcode.com/problems/split-array-largest-sum/
+8. https://leetcode.com/problems/missing-number/
+
+
+
+## for cycle sort:
+if the duplicate element is appearning just once, then it will be thrown to the last : [1,2,3,4,2]
+## if many elements are stil there: then we will have to see the array : [1,2,3,2,3,6,7,8]
+## 2 and 3 are dupliactes but rest others are at theie designated place

@@ -24,7 +24,7 @@ low,high = 0,1
 
 while (target>arr[high]):
     newlow=high
-    high = (high-low+1)*2
+    high = (high-low+1)
     low = newlow
 
 ans = binary_search(arr,low,high,target)

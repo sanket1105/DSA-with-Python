@@ -10,7 +10,7 @@ Split the array in two halves, sort the first one, sort the second one and merge
 ## time complexity: 
 '''
 At each step, we are reducing the array in half till single element is remaining
-So here, splits are 2^n: hence here time complexity is log(N) for each level and there are n levels of
+So here, splits are 2^n: hence here time complexity is log(N) base 2 for each level and there are n levels of
 therefore time complexity will be n*log(n)
 
 Space complexity: O(N)
@@ -55,5 +55,6 @@ def mergesort(nums):
 
     return merge(left,right)
 
-nums = [5,6,9,8,7]
+nums = [5,9,8,5,3,6,7,4]
+
 print(mergesort(nums))    

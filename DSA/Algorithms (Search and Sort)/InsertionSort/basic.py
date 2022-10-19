@@ -6,12 +6,14 @@ that is firt sort till index 1 then index 2 then index 3 and so on.
 
 So for every element,   its left side is sorted, so put the current index at its particular place in the LHS
 
+## after every pass: left side is getting sorted
+
 Worst case : O(n^2)
 Best Case: O(n) : already sorted
 
 Why insertion sort: Steps get reduced as a result, number of swaps get reduced as a result
 ## its stable
-## usef for smaller values for n
+## use for smaller values for n
 ## works good when array is partially sorted
 
 '''

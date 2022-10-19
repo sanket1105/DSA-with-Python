@@ -1,0 +1,6 @@
+
+First Repeating element
+Arithmatic array : ## number of elements in the subarray with same common difference between them
+Largest word in sentence
+matrix multi : hamesha matrix ke andar first col and then row : a = [[0]*cols]*rows
+             : and multiply ke waqt, traverse row and then col

@@ -63,6 +63,8 @@ def reversestack(s):
     reversestack(s)
     insertatbottom(s,popped)  
 
+
+
 s = stack()
 s.push(1)
 s.push(2)

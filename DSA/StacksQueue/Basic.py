@@ -32,5 +32,6 @@ stack.append('c')
 
 print(stack)
 
+
 print(stack.pop())
 print(stack) 

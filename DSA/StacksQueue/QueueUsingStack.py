@@ -9,7 +9,8 @@ class queue:
         self.s2 = []
 
     def enqueue(self,x):
-        self.s1.append(x)
+        self.s1.append(x) 
+        
 
     def dequeue(self):
         if len(self.s1)==0 and len(self.s2)==0:

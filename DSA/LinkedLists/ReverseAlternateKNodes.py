@@ -1,5 +1,5 @@
 
-
+## swap the start alternate k nodes
 
 
 class node:
@@ -65,5 +65,39 @@ ll.push(1)
 ll.push(8)
 ll.printlist()
 print("")
-ll.head = ll.reverse(ll.head,5)  
-ll.printlist()              
+ll.head = ll.reverse(ll.head,6)  
+ll.printlist()       
+
+
+
+''' Another idea for reversing k alternate nodes in
+def reverse(self,head,k):
+        temp  = head
+        for i in range(k):
+            if temp == None: 
+                print(" size greater than list size")
+                return
+            temp = temp.next
+
+        temp = head
+        ## since condition satisfies,lets reverse starting k nodes
+
+        prev = None
+        current = dummy = temp
+        future = temp.next
+        i =0
+        while i<k and future:
+            current.next = prev
+            prev = current
+            current = future
+            future = future.next
+            i+=1
+        print(i)    
+
+        if i==k-1:
+            current.next = prev
+            return current
+
+        dummy.next =  current
+        return prev   
+'''
