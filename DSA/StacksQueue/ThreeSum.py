@@ -4,11 +4,10 @@
 Find if 3 numbers exits whose sum is equal to given value.
 '''
 
-
 a = [1, 4, 45, 6, 10, 8]
 sum = 22
 n = len(a)
-
+ 
 a.sort()
 found = False
 for i in range(n-2):

@@ -73,7 +73,5 @@ s.print()
 
 reversestack(s)
 s.print()
+  
 
-
-
-          

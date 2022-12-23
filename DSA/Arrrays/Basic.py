@@ -46,9 +46,9 @@ print("\n")
 ################################################################
 
 k = [11,22]
-for i in k:
-    s = list(i)  ## cannot form list for input data type as int
-    print(s)   
+#for i in k:
+    #s = list(i)  ## cannot form list for input data type as int
+    #print(s)   
 #########################################################
 ## pop in python
 

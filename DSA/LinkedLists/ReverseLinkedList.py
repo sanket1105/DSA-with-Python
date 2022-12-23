@@ -27,7 +27,8 @@ class Linkedlist:
         present.next = prev
         future.next = present
 
-        return future     ## head     
+        return future     ## head    
+    
 
     def push(self, new_data):
         new_node = node(new_data)
@@ -54,4 +55,7 @@ print("")
 llist.head = llist.reverseiterative(llist.head)
 llist.printlist()
 
+
+
+######################################
 

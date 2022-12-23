@@ -1,14 +1,14 @@
-a = [2,1,5,6,2,3]
+
+a = [3,1,2,4,0,1,3,2]
+stack = []
 ans = 0
-q = []
-
-for i in range(len(a)):
-    while q and a[i] > a[q[-1]]:
-        curr_height = a[q.pop()]
-        if len(q) == 0: break
-        h = min(a[i],a[q[-1]]) - curr_height
-        w = i-q[-1]-1
-        ans+=h*w
-    q.append(i)
-
-print(ans)        
+for i,heighta in enumerate(a):
+    while stack and heighta > a[stack[-1]]:
+        currheight = a[stack.pop()]
+        if not stack: 
+            break
+        j,heightb = stack[-1], a[stack[-1]]
+        volume = min(heighta,heightb) - currheight
+        ans+=volume * (i-j-1)
+    stack.append(i)
+print(ans)    

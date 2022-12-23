@@ -65,7 +65,7 @@ ll.push(1)
 ll.push(8)
 ll.printlist()
 print("")
-ll.head = ll.reverse(ll.head,6)  
+ll.head = ll.reverse(ll.head,4)  
 ll.printlist()       
 
 

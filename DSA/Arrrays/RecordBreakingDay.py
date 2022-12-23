@@ -1,4 +1,7 @@
 
+## presnt value largr than all the previous values
+## or its a last value or greater than the following value
+## first day can be a record breaking dat
 a = [1,2,0,7,2,0,2,2]
 rbd = 0
 mx = -1

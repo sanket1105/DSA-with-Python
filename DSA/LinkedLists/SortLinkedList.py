@@ -32,15 +32,10 @@ def mergesort(head1,head2):
                 head2 = head2.next 
             temp = temp.next
 
-        while head1:
-            temp.next = head1
-            head1 = head1.next
-            temp = temp.next  
-
-        while head2:
-            temp.next = head2
-            head2 = head2.next
-            temp = temp.next      
+        if head1 == None: 
+            temp.next  = head2
+        else: 
+            temp.next = head1         
 
         return merge.next         
 

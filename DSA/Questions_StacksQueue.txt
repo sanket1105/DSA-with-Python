@@ -1,4 +1,5 @@
 1. Infix Postfix Prefix
+reverse stack
 2. https://leetcode.com/problems/valid-parentheses
 3. Stacks using queues (both methods)
 4. Queues using stacks (both methods)

@@ -20,7 +20,7 @@ while i<len(k):
         k[i],k[correctIndex] = k[correctIndex],k[i]
     else:
         i+=1  
-
+print(k)
 ans=[]
 for i in range(len(k)):
     if k[i] != i+1:

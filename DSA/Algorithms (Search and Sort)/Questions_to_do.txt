@@ -1,0 +1,3 @@
+1. search in rotated array : with and without duplicates
+2. rotation counts
+3. cycle sort questions:

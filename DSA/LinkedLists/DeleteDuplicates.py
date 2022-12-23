@@ -2,7 +2,6 @@
 
 ## given that the linked list is in sorted form
 
-
 class node:
     def __init__(self,data):
         self.data = data

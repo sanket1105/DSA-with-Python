@@ -4,9 +4,9 @@
 a = [[1,4,7,11],[2,5,8,12],[3,6,9,16],[10,13,14,17]]
 n = len(a)
 
-target = 199
+target = 17
 ## start from [0][n-1]
-r,c = 0,0
+r,c = 0,n-1
 answer = False
 
 while(r<n and c>=0): ## since we are starting from max value of c, so c can go upto min value that is zero

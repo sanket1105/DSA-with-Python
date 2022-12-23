@@ -1,10 +1,15 @@
-k = [6,5,9,4,5,9,8,7]
-n = len(k)
+k = [1,2,3,2,5]
+i = 0
+while i< len(k):
+    corrindex = k[i]-1
+    if k[i]!= k[corrindex]:
+        k[i],k[corrindex] = k[corrindex],k[i]
+    else: i+=1
+print(k)        
 
-for i in range(n-1):
-    for j in range(i+1,0,-1):
-        if k[j] < k[j-1]:
-            k[j],k[j-1] = k[j-1],k[j]
-        else:
-            break
-print(k)            
+ans = []
+for i in range(len(k)):
+    if k[i]!=i+1:
+        ans.append(k[i])
+        ans.append(i+1)
+print(ans) 

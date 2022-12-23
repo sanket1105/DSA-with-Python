@@ -1,9 +1,83 @@
 
-from secrets import randbits
+## balanced parenthesis or not
 
+def balanced(str):
+    open = ['{','(','[']
+    close = ['}',')',']']
+
+    stack = []
+    for i in str:
+        if i in open:
+            stack.append(i)
+        elif i in close:
+            pos = close.index(i)   
+
+            if len(stack)>0 and open[pos] == stack[-1]  :
+                stack.pop()
+            else: 
+                return "unbalanced"
+
+    if len(stack)==0: return "balanced"
+    else: return "unbalanced"    
+
+string = "{[]{()}}"
+print(string,"-", balanced(string))
+  
+string = "[{}{})(]"
+print(string,"-", balanced(string))
+  
+string = "((()"
+print(string,"-",balanced(string))                    
+
+#######################################################################
+## reverse the sentence
+
+stack = []
+s = 'Hey, I am Sanket.'
+ans= ""
+for i in s:
+    if i!=" ": ans+=i
+
+    else: 
+        stack.append(ans)
+        ans = ""
+
+stack.append(ans)
+
+while len(stack):
+    print(stack.pop(), end = " ")
+
+###################################################################
+#sliding window maximum
+
+a = [1,3,-1,-3,5,3,6,7]
+k = 3
+n = len(a)
+
+from collections import deque
+q = deque()
+
+for i in range(k):
+    while q and a[i] > a[q[-1]]:
+        q.pop()
+    q.append(i)
+
+for i in range(k,n):
+    print(a[q[0]])
+
+    while q and q[0]<=i-k:
+        q.popleft()
+
+    while q and a[i] > a[q[-1]]:
+        q.pop()
+    q.append(i)
+print(a[q[0]])    
+
+##################################################################
+## largest rectangle
 
 a = [2,1,5,6,2,3]
-stack = [-1]
+stack =[-1]
 ans = 0
 a.append(0)
 
@@ -13,25 +87,25 @@ for i in range(len(a)):
         w = i - stack[-1] - 1
         ans = max(ans,h*w)
     stack.append(i)
+print(ans)       
 
-print(ans)
 
 ##################################################################
-a = [2,1,5,6,2,3]
+## trapping rain water
 
+a = [3,1,2,4,0,1,3,2]
 stack = []
 ans = 0
-
-for i in range(len(a)):
-    while stack and a[i] > a[stack[-1]]:
-        curr_height = a[stack.pop()]
-        if len(stack)==0 : break
-        height = min(a[i],a[stack[-1]]) - curr_height
-        width = i - stack[-1] - 1
-        ans+=height*width
+for i,heighta in enumerate(a):
+    while stack and heighta > a[stack[-1]]:
+        currheight = a[stack.pop()]
+        if not stack: 
+            break
+        j,heightb = stack[-1], a[stack[-1]]
+        volume = min(heighta,heightb) - currheight
+        ans+=volume * (i-j-1)
     stack.append(i)
-
-print(ans)
+print(ans)    
 
 #################################################################
 ans = "(a+(b)/c)"
@@ -77,24 +151,23 @@ a = [1, 4, 45, 6, 10, 8]
 sum = 22
 n = len(a)
 a.sort()
-
 found = False
+
 for i in range(n-2):
     l = i+1
-    r = n-1
+    r = n-2
 
-    while l < r:
-        if a[i] + a[l] + a[r] == sum:
-            found = True
+    while l<r:
+        if a[i]+a[l]+a[r] == sum:
+            found  = True
             print(a[i],a[l],a[r])
             break
 
-        elif  a[i] + a[l] + a[r] > sum:
-            r-=1
-        else:
-            l+=1
+        elif a[i]+a[l]+a[r] > sum:
+            r = r-1
+        else: l+=1    
 
-if found==False: print("No such triplet exists")
+if found == False: print("Not found")
 
 
 ######################################################################

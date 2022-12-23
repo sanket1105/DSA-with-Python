@@ -1,87 +1,114 @@
 
 
 
-## given that the linked list is in sorted form
-
-
 class node:
     def __init__(self,data):
         self.data = data
         self.next = None
 
-class llist:
+class linkedlist:
     def __init__(self):
         self.head = None
 
     def push(self,data):
-        new_node = node(data)
-        if self.head==None:
-            self.head = new_node
-        else:
-            temp = self.head
-            new_node.next = temp
-            self.head = new_node
+        newnode  = node(data)
+        newnode.next = self.head
+        self.head = newnode
 
-    def append(self,new_data):
-        new_node = node(new_data)
-        if self.head is None:
-            self.head = new_node
+
+    def insertafter(self,prev,data):
+        newnode = node(data)
+
+        if prev==None:
+            print("previous link doesnt exists")
             return
+        temp = prev.next
+        prev.next = newnode
+        newnode.next = temp
 
-        temp =  self.head
-        while(temp.next):
+
+    def append(self,data):
+        newnode = node(data)
+        if self.head==None:
+            self.head = newnode
+            return
+        
+        temp = self.head
+        while temp.next:
             temp = temp.next
+        temp.next = newnode  
 
-        temp.next = new_node          
 
-    def merged(self,head1,head2):
-        temp1 = head1
-        temp2 = head2
+    def delnode(self,key):
+        if self.head is not None:
+            if self.head.data == key:
+                self.head = self.head.next
+                return
 
-        while temp1 and temp2:
-            if temp1.data < temp2.data:
-                self.append(temp1.data)
-                temp1 = temp1.next 
-            else: 
-                self.append(temp2.data)    
-                temp2 = temp2.next
+        temp = self.head    
+        while temp is not None:  
+            while temp.data != key:
+                prev = temp
+                temp = temp.next
 
-        while temp1:
-            self.append(temp1.data)
-            temp1 = temp1.next
+        if temp==None: return
+        prev.next =temp.next       
 
-        while temp2:
-            self.append(temp2.data)
-            temp2 = temp2.next             
+    def deletelist(self):
+        self.head = None
 
     def printlist(self):
-        if self.head==None:
-            return
         temp = self.head
-        while(temp != None): 
-            print(temp.data,end=" ")
+        while temp:
+            print(temp.data, end= " ")    
             temp = temp.next
 
+#####################################################################################            
 
+if __name__ == '__main__':
 
-ll1 = llist()
-ll1.push(4)
-ll1.push(2)
-ll1.push(1)
+    llist = linkedlist()
+    llist.head = node(1)
+    second = node(2)
+    third = node(3)
 
-ll2 = llist()
+    llist.head.next = second
+    second.next = third
 
-ll2.push(4)
-ll2.push(3)
-ll2.push(1)
+    llist.printlist()
 
-ll3 = llist()
-ll1.printlist()
-print("")
-ll2.printlist()
-print("")
-ll3.merged(ll1.head,ll2.head)
-ll3.printlist()
+    print("####################################")
+    ## adding a new head to link list
 
-               
+    llist.push(14)
+    llist.printlist()
+
+    print("####################################")
+    llist.insertafter(llist.head,15)
+    llist.printlist()
+
+    print("####################################")
+    llist.append(16)
+    llist.printlist()
+
+    print("####################################")
+
+    ## lets build the new list 
+    llist2 = linkedlist()
+    llist2.append(6)
+    llist2.push(7)
+    llist2.push(1)
+    llist2.append(4)
+    llist2.insertafter(llist2.head.next,8)
+    llist2.printlist()
+
+    llist2.delnode(7)
+    llist2.printlist()
+
+    llist2.delAtPos(4)
+    llist2.printlist()
+
+    llist2.deletelist()
+    print("linked list deleted")
+
 

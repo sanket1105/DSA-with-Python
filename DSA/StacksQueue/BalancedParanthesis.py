@@ -26,4 +26,4 @@ string = "[{}{})(]"
 print(string,"-", check(string))
   
 string = "((()"
-print(string,"-",check(string))           
+print(string,"-",check(string))   
