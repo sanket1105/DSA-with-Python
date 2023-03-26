@@ -15,10 +15,7 @@
 ## if you find arr[i] != i+1, then swap if not equal else return that value
 ## thats the duplicate value
 
-nums = [2,1,2,3]
-
-i=0
-
+nums = [2,1,2,3,4]
 i = 0
 while i < len(nums):
     if nums[i] != i+1:
@@ -28,7 +25,8 @@ while i < len(nums):
         else:
             print(nums[i])
             break
-    else: i+=1   
+    else:
+        i+=1   
 
 
 print(nums)

@@ -35,6 +35,5 @@ while i<len(k):
     else:
         i+=1    
 
-
 print(k)
 
